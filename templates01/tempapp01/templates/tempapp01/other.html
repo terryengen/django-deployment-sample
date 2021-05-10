@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+{% extends "tempapp01/base.html" %}
+  {% block body_block %}
+    <h1>Welcome to Other</h1>
+    <h2>This is an example of template inheritance!</h2>
+    <a href="{% url 'tempapp01:index' %}">Back to Index view</a>
+  {% endblock %}

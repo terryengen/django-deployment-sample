@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{% extends "tempapp01/base.html" %}
+{% load custom_filters %}
+  {% block body_block %}
+    <h1>Welcome to Index</h1>
+    <h3>This is index/html showing - extended from base.html</h3>
+    <a href="{% url 'tempapp01:relative' %}">Go to the original Relative URLs View</a>
+
+    <h2>Template filters</h2>
+    <p>{{ text|upper }}</p>
+    <p>{{ text|strcut:"o" }}</p>
+    <p>{{ number|add:"99" }}</p>
+  {% endblock %}
